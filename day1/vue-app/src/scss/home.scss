@@ -1,0 +1,49 @@
+.index_header {
+    height: 0.5rem !important;
+    background-color: #78c652;
+    @include flexbox();
+    @include flex-direction();
+//  height: 100%;
+    color: #fff;
+    li {
+        width: 100%;
+        @include flexbox();
+        @include flex();
+        @include justify-content();
+        @include align-items();
+        i {
+            font-size: 0.18rem;
+        }
+        .icon_address,
+        .icon_down {
+            opacity: 0.7;
+            font-size: 0.16rem;
+        }
+    }
+    .index_logo img {
+        height: 0.28rem;
+        width: auto;
+    }
+}
+
+#index_content {
+    background: #fff;
+    .index_nav {
+        padding: 0.07rem;
+        ul {
+            @include flexbox();
+            @include flex-direction();
+        }
+    }
+    .index_list {
+        li:nth-of-type(1) {
+            //          height: 0.45rem;
+            padding-top: 0.04rem;
+            background: #f8f8f8;
+        }
+        li {
+            margin-top: 0.04rem;
+            //          margin-bottom: 0.02rem;
+        }
+    }
+}

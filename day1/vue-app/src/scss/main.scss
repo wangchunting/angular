@@ -1,0 +1,77 @@
+@import "./lib/reset.scss";
+@import "./home.scss";
+@import "./kind.scss";
+@import "./user.scss";
+@import "./setUp.scss";
+html,
+body {
+    width: 100%;
+    height: 100%;
+    color: #666;
+    font-size: 14px;
+}
+
+html {
+    font-size: 100px;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    /* project id 332131 */
+    src: url('//at.alicdn.com/t/font_jqna6j8jr4927qfr.eot');
+    src: url('//at.alicdn.com/t/font_jqna6j8jr4927qfr.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_jqna6j8jr4927qfr.woff') format('woff'), url('//at.alicdn.com/t/font_jqna6j8jr4927qfr.ttf') format('truetype'), url('//at.alicdn.com/t/font_jqna6j8jr4927qfr.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: iconfont;
+    font-style: normal;
+    font-size: 0.24rem;
+}
+
+#myapp {
+    width: 100%;
+    height: 100%;
+    @include flexbox();
+    @include flex-direction(column);
+    header {
+        width: 100%;
+        background-color: #fff;
+    }
+    #content {
+        @include flex();
+        overflow: auto;
+        width: 100%;
+    }
+    #footer {
+        height: 54px;
+        width: 100%;
+        background-color: #fff;
+        border-top: 1px solid #ffbd8b;
+        ul {
+            @include flexbox();
+            @include flex-direction();
+            height: 100%;
+            li {
+                text-align: center;
+                width: 100%;
+                height: 100%;
+                @include flex();
+                @include flexbox();
+                @include justify-content();
+                @include align-items();
+                @include flex-direction(column);
+                i {
+                    color: #ffbd8b;
+                }
+                p {
+                    color: #898989;
+                }
+            }
+        }
+    }
+}
